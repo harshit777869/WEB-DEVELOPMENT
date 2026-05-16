@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collaborative Editor</title>
+</head>
+
+<body style="font-family:Arial; text-align:center;">
+
+<h2>Real-Time Editor (Simulation)</h2>
+
+<textarea id="doc" rows="10" cols="50"></textarea>
+
+<p>Live Preview:</p>
+<div id="preview"></div>
+
+<script>
+document.getElementById("doc").addEventListener("input", function() {
+  document.getElementById("preview").innerText = this.value;
+});
+</script>
+
+</body>
+</html>

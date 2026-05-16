@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning Platform</title>
+</head>
+
+<body style="font-family:Arial; text-align:center;">
+
+<h2>Online Learning Platform</h2>
+
+<video width="400" controls>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+
+<h3>Quiz Section</h3>
+
+<p>What is HTML?</p>
+<button onclick="ans()">Submit Answer</button>
+
+<p id="res"></p>
+
+<script>
+function ans() {
+  document.getElementById("res").innerText =
+    "Correct ✔ HTML is HyperText Markup Language";
+}
+</script>
+
+</body>
+</html>

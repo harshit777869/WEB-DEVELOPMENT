@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio - Task 1</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      background: #111827;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background: #4facfe;
+      border: none;
+      color: white;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="nav">
+  <div>My Portfolio</div>
+  <div>Home | About | Projects</div>
+</div>
+
+<div class="hero">
+  <h1>Hello, I'm Developer</h1>
+  <p>Modern Portfolio with animations</p>
+  <button class="btn">Contact Me</button>
+</div>
+
+</body>
+</html>
